@@ -1,0 +1,109 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f6f9;
+    padding: 20px;
+    color: #333;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.date {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+/* Card Container */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Hover Effect */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Severity Colors */
+.high {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.medium {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.low {
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* Badge Style (optional) */
+.badge {
+    padding: 5px 10px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+}
+
+.badge.high {
+    background-color: #dc3545;
+}
+
+.badge.medium {
+    background-color: #ffc107;
+    color: black;
+}
+
+.badge.low {
+    background-color: #28a745;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aaa;
+}
