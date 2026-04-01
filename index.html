@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Alarm Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .date {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #666;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .high {
+            color: red;
+            font-weight: bold;
+        }
+        .medium {
+            color: orange;
+        }
+        .low {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Managedb Alarms - Daily Report</h1>
+<div class="date">Date: <span id="date"></span></div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Alarm Name</th>
+            <th>Severity</th>
+            <th>Time</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>DB Down</td>
+            <td class="high">High</td>
+            <td>10:00 AM</td>
+        </tr>
+        <tr>
+            <td>CPU Spike</td>
+            <td class="medium">Medium</td>
+            <td>11:30 AM</td>
+        </tr>
+        <tr>
+            <td>Memory Leak</td>
+            <td class="high">High</td>
+            <td>01:15 PM</td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+    document.getElementById("date").innerText = new Date().toLocaleDateString();
+</script>
+
+</body>
+</html>
