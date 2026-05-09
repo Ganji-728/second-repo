@@ -61,8 +61,10 @@ public class AddNumbers {
         int b = 20;
         int sum = a + b;
 	int sub = a - b;
+	int mul = a * b;
 
         System.out.println("Sum = " + sum);
 	System.out.println("Sub = " + sub);
+	System.out.println("mul = " + mul);
     }
 }
