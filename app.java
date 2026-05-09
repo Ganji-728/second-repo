@@ -62,9 +62,11 @@ public class AddNumbers {
         int sum = a + b;
 	int sub = a - b;
 	int mul = a * b;
+	int div = a % b;
 
         System.out.println("Sum = " + sum);
 	System.out.println("Sub = " + sub);
 	System.out.println("mul = " + mul);
+	System.out.println("div = " + div);
     }
 }
